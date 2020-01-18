@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="container text-center">
+      <br />
+      <h1 id="title">Joenathan Survey Form</h1>
+      <p id="description">
+        <i>Thank you for taking the time to help me improve myself</i>
+      </p>
+      <hr />
+    </header>
+
+    <main class="container">
+      <div class="row justify-content-center">
+        <div class="col-sm-6">
+          <form id="survey-form">
+            <div class="form-group">
+              <label for="name" id="name-label">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email" id="email-label">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="age" id="number-label">Age (optional)</label>
+              <input
+                type="number"
+                name="age"
+                id="number"
+                class="form-control"
+                placeholder="Enter your age"
+                min="17"
+                max="25"
+                aria-describedby="ageHelp"
+              />
+              <small id="ageHelp" class="form-text text-muted"
+                >Only for age between 17-25</small
+              >
+            </div>
+            <div class="form-group">
+              <label for="curlang">Select your current language</label>
+              <select name="curlang" id="dropdown" class="form-control">
+                <option selected>Select an option</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="">Languages you want to learn in the future</label>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  name="option1"
+                  id="option1"
+                  class="form-check-input"
+                  value="c"
+                  checked
+                />
+                <label for="option1" class="form-check-label">C/C++/C#</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  name="option2"
+                  id="option2"
+                  class="form-check-input"
+                  value="java"
+                />
+                <label for="option2" class="form-check-label">Java</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  name="option3"
+                  id="option3"
+                  class="form-check-input"
+                  value="python"
+                />
+                <label for="option3" class="form-check-label">Python</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for=""
+                >Do you want to know any info about your future
+                languages?</label
+              >
+              <div class="form-check">
+                <input
+                  type="radio"
+                  name="option"
+                  id="option1"
+                  class="form-check-input"
+                  value="yes"
+                  checked
+                />
+                <label for="option1" class="form-check-label">Yes</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  name="option"
+                  id="option2"
+                  class="form-check-input"
+                  value="no"
+                />
+                <label for="option2" class="form-check-label">No</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  name="option"
+                  id="option3"
+                  class="form-check-input"
+                  value="maybe"
+                />
+                <label for="option3" class="form-check-label">Maybe</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="comment">Feedback for me</label>
+              <textarea
+                name="comment"
+                id="comment"
+                rows="3"
+                class="form-control"
+              ></textarea>
+            </div>
+            <button type="submit" id="submit" class="btn btn-primary btn-block">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
